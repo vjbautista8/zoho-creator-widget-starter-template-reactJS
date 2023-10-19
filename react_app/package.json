@@ -9,11 +9,13 @@
     "@testing-library/user-event": "^13.5.0",
     "cross-env": "^7.0.3",
     "react": "^18.2.0",
+    "react-redux": "^8.0.5",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "zoho-creator": "cross-env BUILD_PATH='../creator_app/app' react-scripts build && cd ../creator_app && zet run",
     "start": "react-scripts start",
     "build": "cross-env BUILD_PATH='../creator_app/app' react-scripts build && cd ../creator_app && zet pack",
     "test": "react-scripts test",
